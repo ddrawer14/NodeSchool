@@ -5,7 +5,7 @@ var through = require('through2');
 // counter is a readable stream
 module.exports = function(counter) {
 
-	// create counts objectto track # of occurrences of each unique country code
+	// create counts object to track # of occurrences of each unique country code
 	var counts = {};
 
 	// create new through2 instance with write (transform) and end functions

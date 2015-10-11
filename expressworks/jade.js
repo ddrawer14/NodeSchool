@@ -9,9 +9,10 @@
  // Path to template files located under the templates folder
  app.set('views', path.join(__dirname, 'templates'));
  
- // Tell Express app what template engine to use
+ // Tell Express app which template engine to use
  app.set('view engine', 'jade');
  
+ // Configure GET request for /home route
  app.get('/home', function(req, res) {
  
   // Render() takes template name and data (called locals)
