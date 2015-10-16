@@ -10,7 +10,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 require('node-jsx').install();
 
 app.use('/', function(req, res) {
-	res.render('props', '');
+	res.render('state', '');
 });
 
 app.listen(app.get('port'), function() {});
