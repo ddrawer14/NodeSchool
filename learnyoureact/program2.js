@@ -17,7 +17,7 @@ app.set('views', __dirname + '/views');
 app.engine('jsx', require('express-react-views').createEngine());
 
 require('node-jsx').install();
-var TodoBox = require('./views/isomorphic.jsx');
+var TodoBox = require('./views/prop-state.jsx');
 
 var data = [
 	{ title: 'Shopping', detail: process.argv[3] },

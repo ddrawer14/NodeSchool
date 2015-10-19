@@ -1,5 +1,7 @@
 var React = require('react');
-var TodoBox = require('./views/isomorphic.jsx');
+var ReactDOM = require('react-dom');
+var TodoBox = require('./views/prop-state.jsx');
 
 var data = JSON.parse(document.getElementById('initial-data').getAttribute('data-json'));
-React.render(<TodoBox data={data} />, document.getElementById("app"));
+
+ReactDOM.render(<TodoBox data={data} />, document.getElementById("app"));
